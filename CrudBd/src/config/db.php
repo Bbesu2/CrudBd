@@ -1,7 +1,7 @@
 <?php
 class Database {
     private $host = "localhost";
-    private $db_name = "pw2";
+    private $db_name = "matricula";
     private $username = "root";
     private $password = "";
     private $conn;
