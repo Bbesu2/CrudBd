@@ -8,11 +8,11 @@ if (isset($_GET['url'])) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Escola - Muitos para Muitos</title>
+    <title>Relação Muitos para Muitos</title>
 </head>
 <body>
  
-<h1>Escola - CRUD Completo</h1>
+<h1>Escola</h1>
  
 <h2>Aluno</h2>
 <input type="hidden" id="alunoId">
@@ -39,7 +39,7 @@ Nome: <input type="text" id="nomeCurso">
  
 <script>
  
-// ================= ALUNO =================
+// Aluno
  
 function salvarAluno(){
     let id = document.getElementById("alunoId").value;
@@ -99,7 +99,7 @@ function limparAluno(){
     document.getElementById("emailAluno").value = "";
 }
  
-// ================= CURSO =================
+// Curso
  
 function salvarCurso(){
     let id = document.getElementById("cursoId").value;
@@ -155,7 +155,7 @@ function limparCurso(){
     document.getElementById("nomeCurso").value = "";
 }
  
-// ================= MATRÍCULA =================
+// Matrícula
  
 function matricular(){
     fetch("index.php?url=aluno_curso", {
@@ -219,4 +219,5 @@ carregarSelects();
 </script>
  
 </body>
+
 </html>
